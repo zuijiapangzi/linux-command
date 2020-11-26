@@ -79,6 +79,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ```shell
 route add -net 224.0.0.0 netmask 240.0.0.0 dev eth0    #增加一条到达244.0.0.0的路由。
+route add -net 172.16.2.0 netmask 255.255.255.0 gw 172.16.2.8   # 添加一条到达172.16.2.0/24的路由，网关地址为172.16.2.8
 ```
 
  **屏蔽一条路由：** 
